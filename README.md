@@ -8,7 +8,10 @@
 -  Encryption is the process of protecting information or data by using mathematical models to scramble it in such a way that only the parties who have the key to unscramble it can access it.
 -  There are two types of encryption in widespread use today:
   - Symmetric encryption.
-  - Asymmetric encryption. 
+  - Asymmetric encryption.
+- Encryption is the process of encoding information in such a way that only authorized parties can access it.
+- Encryption is widely used to protect sensitive data, such as personal information, financial transactions, and government communications, from unauthorized access.
+- There are many encryption algorithms and techniques, each with its own strengths and weaknesses, but they all serve the same fundamental purpose of securing information.
 <br>
 
 **SYMMETRIC ENCRYPTION**
@@ -60,7 +63,50 @@
 - Overall, encoding in blockchain serves to standardize the representation of data within the network, ensuring interoperability between different systems and participants while maintaining data integrity and security.
 <br>
 
+**HASHING**
+- Hashing is a process of converting input data, such as text or numbers, into a fixed-size string of characters, typically through a mathematical algorithm.
+- The output, called a hash value or hash code, is unique to the input data.
+- Hashing is widely used in computer science for various purposes, including data storage, cryptography, and data integrity verification.
+- In hashing, the input data can be of any length, but the output hash value will always have a fixed length.
+  - This property makes hashing useful for tasks like storing passwords securely, as it allows systems to store only the hashed values rather than the actual passwords.
+- Common hashing algorithms include;
+  - MD5 (Message Digest Algorithm 5)
+  -  SHA-1 (Secure Hash Algorithm 1)
+  -  SHA-256, and many others.
+  -  These algorithms vary in terms of their speed, security, and the length of the hash they produce.
+- enerally, more secure hashing algorithms produce longer hash values and are less prone to collisions, where two different inputs produce the same hash value.
 
+- **Hash functions should have several key properties:**
+  - 1. Deterministic: The same input will always produce the same output hash value.
+    2. Fast computation: Hashing should be computationally efficient.
+    3. Avalanche effect: A small change in the input should result in a significantly different hash value.
+    4. Pre-image resistance: It should be computationally infeasible to reverse-engineer the original input from its hash value.
+    5. Collision resistance: It should be unlikely for two different inputs to produce the same hash value.
+
+- Despite its usefulness, it's important to note that hashing is not encryption. _Hashing is a one-way function_, meaning that it's designed to be irreversible. Once data is hashed, it cannot be feasibly converted back to its original form.
+<br>
+
+**P-256**
+- P-256 refers to the elliptic curve cryptography (ECC) curve named NIST P-256, also known as secp256r1. It's defined by the National Institute of Standards and Technology (NIST) and is widely used for implementing public-key cryptography.
+- The "P" in P-256 stands for "prime," indicating that the curve is defined over a prime field. The number "256" refers to the size of the key, measured in bits. In this case, P-256 provides a security level equivalent to using a 128-bit symmetric key.
+- P-256 is commonly used in various cryptographic protocols and applications, including SSL/TLS for secure web browsing, digital signatures, and secure communication in various systems. It's particularly popular for its balance between security and efficiency, making it suitable for a wide range of applications, including those with limited computational resources such as embedded systems and IoT devices.
+- Here are some common applications and use cases:
+
+1. **Secure Communication**: P-256 is used in protocols like SSL/TLS to establish secure communication channels over the internet, ensuring that data exchanged between a client and a server remains confidential and cannot be tampered with by unauthorized parties.
+
+2. **Digital Signatures**: P-256 is used for generating and verifying digital signatures. Digital signatures are essential for ensuring the authenticity and integrity of messages or documents in scenarios like email communication, software distribution, and financial transactions.
+
+3. **Key Exchange**: P-256 is used in key exchange protocols such as Diffie-Hellman key exchange to securely establish shared secret keys between parties. These shared keys can then be used for encrypting and decrypting messages.
+
+4. **Authentication**: P-256 is used for user authentication in various systems, such as secure login processes for websites and online services. It allows users to prove their identity securely without transmitting sensitive information like passwords over insecure channels.
+
+5. **Blockchain and Cryptocurrencies**: P-256 is used in blockchain technologies, including cryptocurrencies like Bitcoin and Ethereum, for generating public-private key pairs and signing transactions. It ensures the security and integrity of transactions recorded on the blockchain.
+
+6. **Embedded Systems and IoT**: P-256's efficiency makes it suitable for use in resource-constrained environments, such as embedded systems and IoT devices, where computational resources like memory and processing power are limited. It enables secure communication and authentication in these devices.
+
+Overall, P-256 plays a crucial role in ensuring the confidentiality, integrity, and authenticity of data in various applications and environments where security is paramount.
+
+<BR>
 
 **POLYGON** : 
 - Polygon is a blockchain platform which aims to create a multi-chain blockchain system compatible with Ethereum.
