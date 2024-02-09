@@ -58,6 +58,9 @@
     3. **Data Encoding in Blocks**: The data stored within blocks on a blockchain network, such as transaction data or smart contract code, may be encoded using specific serialization formats like Protocol Buffers (protobuf) or JSON (JavaScript Object Notation) to ensure efficient storage and transmission across the network.
     4. **Address Encoding**: Public addresses associated with cryptocurrency wallets are often encoded using specific algorithms or formats to ensure their uniqueness and compatibility with the underlying blockchain protocol. For example, Bitcoin addresses are encoded using Base58Check encoding.
 - Overall, encoding in blockchain serves to standardize the representation of data within the network, ensuring interoperability between different systems and participants while maintaining data integrity and security.
+<br>
+
+
 
 **POLYGON** : 
 - Polygon is a blockchain platform which aims to create a multi-chain blockchain system compatible with Ethereum.
